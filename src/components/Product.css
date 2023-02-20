@@ -1,0 +1,259 @@
+.product-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 100px 150px;
+    gap: 100px;
+    position: relative;
+}
+
+.left-product-container {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 20px;
+}
+
+.left-product-container.left-product-containered {
+    
+}
+
+.bg-pop {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: hsl(0, 0%, 0%);
+    opacity: 75%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    display: none;
+    z-index: 999;
+}
+
+.bg-pop.bg-popped {
+    display: grid;
+}
+
+.pop {
+    display: none;
+    z-index: 999;
+}
+
+.pop.popped {
+    display: grid;
+    position: fixed;
+    transform: translate(-50%, -50%)
+               scale(.80);
+    top: 50%;
+    left: 50%;
+}
+
+.xmark {
+    grid-column: 1 / span 4;
+    grid-row: 1;
+    margin-left: auto; 
+    margin-right: 0;
+    height: 35px;
+    filter: brightness(0) invert(1);
+}
+
+.xmark:hover {
+    filter: brightness(0) saturate(100%) invert(71%) sepia(54%) saturate(5548%) hue-rotate(347deg) brightness(101%) contrast(102%); 
+    cursor: pointer;
+}
+
+.slide {
+    position: relative;
+    grid-column: 1 / span 4;
+    grid-row: 2;
+}
+
+.left {
+    position: absolute;
+    right: -35px;
+    height: 30px;
+    padding: 20px 25px;
+    border-radius: 50%;
+    background-color: white;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+.right {
+    position: absolute;
+    left: -35px;
+    height: 30px;
+    padding: 20px 25px;
+    border-radius: 50%;
+    background-color: white;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+.right:hover, .left:hover {
+    cursor: pointer;
+    filter:
+}
+
+.p {
+    height: 100%;
+    object-fit: contain;
+    width: 100%;
+    grid-column: 1 / span 4;
+    border-radius: 20px;
+    grid-row: 2;
+}
+
+.p.ped {
+
+}
+
+.p:hover {
+    cursor: pointer;
+}
+
+.p1-t, .p2-t, .p3-t, .p4-t {
+    grid-row: 3;
+    height: 100%;
+    object-fit: contain;
+    width: 100%
+}
+
+.pp {
+    height: 90%;
+    width: 90%;
+    margin: auto;
+}
+
+.p1, .p2, .p3, .p4, .p1-t, .p2-t, .p3-t, .p4-t {
+    border-radius: 20px;
+}
+
+.p1-t:hover, .p2-t:hover, .p3-t:hover, .p4-t:hover {
+    cursor: pointer;
+    opacity: 75%;
+}
+
+.p1-t, .p2-t, .p3-t, .p4-t {
+    transition: filter .5s ease, opacity .5s ease;
+}
+
+.p1-t.p1-ted, .p2-t.p2-ted, .p3-t.p3-ted, .p4-t.p4-ted {
+    filter: drop-shadow(2px 0px 0px  hsl(26, 100%, 55%))
+            drop-shadow(0px -2px 0px  hsl(26, 100%, 55%))
+            drop-shadow(0px 2px 0px  hsl(26, 100%, 55%))
+            drop-shadow(-2px 0px 0px  hsl(26, 100%, 55%));
+    opacity: 50%;
+}
+
+.right-product-container {
+    padding: 50px 0px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 20px;
+}
+
+.head {
+    font-weight: 700;
+    color: hsl(26, 100%, 55%);
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    display: grid;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.name {
+    color: hsl(220, 13%, 13%);
+    font-weight: 700;
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    font-size: 50px;
+}
+
+.detail {
+    color: hsl(219, 9%, 45%);
+    grid-column: 1 / span 2;
+    grid-row: 3;
+    display: grid;
+    align-items: center;
+    font-size: 17.5px;
+}
+
+.price-discounted {
+    color:hsl(220, 13%, 13%);
+    font-weight: 700;
+    grid-row: 4;
+    display: grid;
+    align-items: end;
+    font-size: 40px;
+}
+
+.discount {
+    color:hsl(26, 100%, 55%);
+    font-weight: 700;
+    grid-row: 4;
+    display: grid;
+    align-items: end;
+    font-size: 25px;
+    
+}
+
+.discount span {
+    background-color: hsl(25, 100%, 94%);
+    padding: 1px 7.5px;
+    width: 50px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.price {
+    color: hsl(220, 14%, 75%);
+    font-weight: 700;
+    grid-row: 5;
+    grid-column: 1 / span 2;
+    text-decoration: line-through;
+}
+
+.amount-container {
+    color:hsl(220, 13%, 13%);
+    background-color: hsl(223, 64%, 98%);
+    font-weight: 700;
+    grid-row: 6;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    place-items: center;
+    border-radius: 10px;
+}
+
+.amount {
+    padding: 10px;
+}
+
+.minus, .plus {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.btn {
+    background-color: hsl(26, 100%, 55%);
+    color:hsl(223, 64%, 98%);
+    transition: opacity .5s ease;
+    grid-row: 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-weight:700;
+    border-radius: 10px;
+}
+
+.btn img {
+    height: 20px;
+    filter: brightness(0) invert(1);
+}
+
+.btn:hover {
+    cursor: pointer;
+    opacity: 75%;
+}

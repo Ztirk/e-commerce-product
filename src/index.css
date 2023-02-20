@@ -1,0 +1,80 @@
+:root {
+  font-family: 'Kumbh Sans', sans-serif;
+
+}
+
+body, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.orange {
+  color: hsl(26, 100%, 55%);
+}
+
+.bg-orange {
+  background-color: hsl(26, 100%, 55%);
+}
+
+.pale-orange {
+  color: hsl(25, 100%, 94%)
+}
+
+.bg-pale-orange { 
+  background-color: hsl(25, 100%, 94%);
+}
+
+.very-dark-blue {
+  color: hsl(220, 13%, 13%);
+}
+
+.bg-very-dark-blue {
+  background-color: hsl(220, 13%, 13%);
+}
+
+.dark-grayish-blue {
+  color: hsl(219, 9%, 45%);
+}
+
+.bg-dark-grayish-blue {
+  background-color: hsl(219, 9%, 45%);
+}
+
+.grayish-blue {
+  color: hsl(220, 14%, 75%)
+}
+
+.bg-grayish-blue {
+  background-color: hsl(220, 14%, 75%);
+}
+
+.light-grayish-blue {
+  color: hsl(223, 64%, 98%)
+}
+
+.bg-light-grayish-blue {
+  background-color: hsl(223, 64%, 98%);
+}
+
+.white {
+  color: hsl(0, 0%, 100%)
+}
+
+.bg-white {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.black {
+  color: hsl(0, 0%, 0%);
+  opacity: 75%;
+}
+
+.bg-black {
+  background-color: hsl(0, 0%, 0%);
+  opacity: 75%;
+}

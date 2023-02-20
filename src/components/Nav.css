@@ -1,0 +1,120 @@
+.nav-container {
+    margin: 0px 100px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    border-bottom: 1px hsl(219, 9%, 45%) solid;
+    align-items: center;
+}
+
+.logo {
+    width: 175px;
+    margin-right: 50px;
+}
+
+.toggle-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+
+.left-container {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    justify-content: start;
+    align-items: center;
+    gap: 30px;
+    color:hsl(220, 14%, 75%);
+    grid-template-rows: 150px;
+}
+
+.left-container li {
+    height: 100%;
+    display: grid;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.left-container li:hover {
+    color: hsl(220, 13%, 13%);
+}
+
+.underline {
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    background-color: hsl(26, 100%, 55%);
+    bottom: 0;
+    transition: height .5s ease;
+}
+
+.left-container li:hover .underline {
+    height: 5px;
+}
+
+.right-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: end;
+    align-items: center;
+    gap: 40px;
+}
+
+.cart {
+    height: 30px;
+    transition: filter .5s ease;
+}
+
+.cart:hover {
+    cursor: pointer;
+    filter: brightness(0%)
+}
+
+.avatar {
+    height: 75px;
+    transition: filter .5s ease;
+}
+
+.avatar:hover {
+    filter: drop-shadow(3px 0px 0px  hsl(26, 100%, 55%))
+            drop-shadow(0px -3px 0px  hsl(26, 100%, 55%))
+            drop-shadow(0px 3px 0px  hsl(26, 100%, 55%))
+            drop-shadow(-3px 0px 0px  hsl(26, 100%, 55%));
+    cursor: pointer;
+}
+
+.cart-title {
+    width: 100%;
+    padding: 30px;
+    font-weight: 700;
+}
+
+.cart-container {
+    position: relative;
+}
+
+.line {
+    background-color: hsl(219, 9%, 45%);
+    width: 100%;
+    height: 1px;
+}
+
+.cart-pop {
+    display: none;
+}
+
+.cart-pop.cart-popped {
+    display: grid;
+    position: absolute;
+    background-color: white;
+    width: 350px;
+    left: 50%;
+    transform: translate(-50%, 20px);
+    z-index: 999;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+.btn-checkout {
+    margin: 20px;
+}
