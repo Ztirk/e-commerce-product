@@ -6,4 +6,4 @@ React, CSS
 
 # Link
 
-[Rest Countries Api](https://ztirk.github.io/rest-countries-api/)
+[E-Commerce Product](https://ztirk.github.io/e-commerce-product/)
